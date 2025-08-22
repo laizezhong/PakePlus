@@ -102,7 +102,7 @@
                             spellCheck="false"
                             clearable
                             @input="changeAppName"
-                            :placeholder="`${t('example')}：PakePlus`"
+                            :placeholder="`${t('example')}：PackPlus`"
                         />
                     </el-form-item>
                     <el-form-item
@@ -1136,7 +1136,7 @@ const handleFileChange = async (event: any) => {
 const upSrcFile = async (filePath: string, base64Content: string) => {
     const resSha = await githubApi.getFileSha(
         store.userInfo.login,
-        'PakePlus',
+        'PackPlus',
         filePath,
         { ref: store.currentProject.name }
     )
@@ -1155,7 +1155,7 @@ const upSrcFile = async (filePath: string, base64Content: string) => {
     // update file
     const updateRes: any = await githubApi.updateFileContent(
         store.userInfo.login,
-        'PakePlus',
+        'PackPlus',
         filePath,
         params
     )
@@ -1252,7 +1252,7 @@ const updateIcon = async () => {
     const iconContent = store.currentProject.iconRound
         ? roundIcon.value.split('base64,')[1]
         : iconBase64.value.split('base64,')[1]
-    await store.updateIcon('PakePlus', iconContent)
+    await store.updateIcon('PackPlus', iconContent)
 }
 
 const backHome = () => {
@@ -1490,7 +1490,7 @@ const updatePPconfig = async () => {
     // get CargoToml file sha
     const shaRes: any = await githubApi.getFileSha(
         store.userInfo.login,
-        'PakePlus',
+        'PackPlus',
         'scripts/ppconfig.json',
         {
             ref: store.currentProject.name,
@@ -1503,7 +1503,7 @@ const updatePPconfig = async () => {
         // update config file
         const updateRes: any = await githubApi.updateFileContent(
             store.userInfo.login,
-            'PakePlus',
+            'PackPlus',
             'scripts/ppconfig.json',
             {
                 message: 'update ppconfig from pakeplus',
@@ -1529,7 +1529,7 @@ const updateCustomJs = async () => {
     // get CargoToml file sha
     const shaRes: any = await githubApi.getFileSha(
         store.userInfo.login,
-        'PakePlus',
+        'PackPlus',
         'src-tauri/data/custom.js',
         {
             ref: store.currentProject.name,
@@ -1542,7 +1542,7 @@ const updateCustomJs = async () => {
         const jsFileContent: any = await base64Encode(initJsScript)
         const updateRes: any = await githubApi.updateCustomJsFile(
             store.userInfo.login,
-            'PakePlus',
+            'PackPlus',
             {
                 message: 'update custom js from pakeplus',
                 content: jsFileContent,
@@ -1602,7 +1602,7 @@ const easyLocal = async () => {
         // log path
         const logPath: string = await join(appDataDirPath, 'rh.log')
         let rhtarget: string = rhscript
-            .replace('PakePlus.exe', ppexePath)
+            .replace('PackPlus.exe', ppexePath)
             .replace('Target.exe', targetExe)
             .replace('rh.log', logPath)
         // ico save to local
@@ -1705,10 +1705,10 @@ const publishWeb = async () => {
             store.currentProject.name,
             store.currentProject.showName,
             store.currentProject.isHtml,
-            'PakePlus publish action error ' + error.message,
+            'PackPlus publish action error ' + error.message,
             'failure',
             'build error',
-            'PakePlus'
+            'PackPlus'
         )
         ElMessageBox.confirm(t('publishErrorTips'), t('publishError'), {
             confirmButtonText: t('confirm'),
@@ -1768,7 +1768,7 @@ const dispatchAction = async () => {
     console.log('store.currentProject.platform', store.isBuild)
     const dispatchRes: any = await githubApi.dispatchWorkflow(
         store.userInfo.login,
-        'PakePlus',
+        'PackPlus',
         {
             ref: store.currentProject.name,
             inputs: store.isBuild,
@@ -1785,10 +1785,10 @@ const dispatchAction = async () => {
             store.currentProject.name,
             store.currentProject.showName,
             store.currentProject.isHtml,
-            'PakePlus dispatch error ' + message,
+            'PackPlus dispatch error ' + message,
             'failure',
             'build error',
-            'PakePlus'
+            'PackPlus'
         )
         buildLoading.value = false
         throw new Error(t('dispatchError') + ': ' + message)
@@ -1834,7 +1834,7 @@ const reRunFailsJobs = async (id: number, html_url: string) => {
             html_url,
             'failure rerun ' + rerunCount,
             'build error',
-            'PakePlus'
+            'PackPlus'
         )
         await new Promise((resolve) => setTimeout(resolve, 3000))
         openUrl(html_url)
@@ -1842,7 +1842,7 @@ const reRunFailsJobs = async (id: number, html_url: string) => {
     } else {
         const rerunRes: any = await githubApi.rerunFailedJobs(
             store.userInfo.login,
-            'PakePlus',
+            'PackPlus',
             id
         )
         // 201 is success 403 is running
@@ -1859,7 +1859,7 @@ const reRunFailsJobs = async (id: number, html_url: string) => {
 const checkBuildStatus = async () => {
     const checkRes: any = await githubApi.getWorkflowRuns(
         store.userInfo.login,
-        'PakePlus',
+        'PackPlus',
         {
             branch: store.currentProject.name,
             event: 'workflow_dispatch',
@@ -1881,7 +1881,7 @@ const checkBuildStatus = async () => {
                 html_url,
                 'success',
                 'build success',
-                'PakePlus'
+                'PackPlus'
             )
             const now = new Date()
             localStorage.setItem('lastClickTime', now.toISOString())
@@ -1902,7 +1902,7 @@ const checkBuildStatus = async () => {
                 html_url,
                 'cancelled',
                 'build cancelled',
-                'PakePlus'
+                'PackPlus'
             )
             await new Promise((resolve) => setTimeout(resolve, 3000))
             loadingText(t('cancelled'))
@@ -1926,7 +1926,7 @@ const checkBuildStatus = async () => {
                 html_url,
                 'unknown',
                 'build unknown ' + status,
-                'PakePlus'
+                'PackPlus'
             )
             buildLoading.value = false
             buildTime = 0

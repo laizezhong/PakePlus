@@ -6,7 +6,7 @@ This occurs because the GitHub token wasn't granted the required permissions dur
 Follow the [GitHub Token Guide](../guide/token.md) to regenerate your token with proper permissions.  
 
 **Recommendation:**  
-While granting all permissions will work (and is safest), PakePlus actually only needs:  
+While granting all permissions will work (and is safest), PackPlus actually only needs:  
 - `repo` (full control of private repositories)  
 - `workflow` (GitHub Actions access)  
 - `user` (read user profile data)  

@@ -25,8 +25,8 @@ Token Permission Requirements:
 All repositories: Required to fork the original template repository
 Actions: Used to execute GitHub Actions for packaging and compilation
 Administration: Required for forking repositories and file management
-Contents: Allows adding/deleting/modifying/searching files in the PakePlus repository
-Issues: Enables submitting compilation errors or other issues to PakePlus
+Contents: Allows adding/deleting/modifying/searching files in the PackPlus repository
+Issues: Enables submitting compilation errors or other issues to PackPlus
 Workflows: Used to compile and package your software
 ```
 
@@ -45,7 +45,7 @@ Workflows: Used to compile and package your software
    Simply check the following three permissions: <font color="red">repo, workflow, and user</font>.
    ![](../static/imgs/token11.png)
    ![](../static/imgs/token12.webp)
-   Then copy the generated token into PakePlus:
+   Then copy the generated token into PackPlus:
    ![](../static/imgs/token12.png)
 
 8. **<font color="red">(Skip this step if you already obtained a token in Step 7. Proceed to Step 9.)</font>**
@@ -63,11 +63,11 @@ Workflows: Used to compile and package your software
       ![](../static/imgs/token7.png)
     - Click `Generate token` at the bottom to obtain your token:
       ![](../static/imgs/token8.png)
-    - Copy the token into PakePlus to start using it:
+    - Copy the token into PackPlus to start using it:
       ![](../static/imgs/token9.png)
 
 9. **Test the Token**
-   Open PakePlus, click the settings button in the top-right corner, paste the token obtained in Step 7 or 8, and click "Test." If it shows "Token is valid," you're all set!
+   Open PackPlus, click the settings button in the top-right corner, paste the token obtained in Step 7 or 8, and click "Test." If it shows "Token is valid," you're all set!
    ![](../static/imgs/token13.png)
 
 ## Important Notes

@@ -202,20 +202,20 @@ export default {
     },
     // get update file contents
     getUpdateFile() {
-        return http(`https://sjj1024.github.io/PakePlus/update.json`, {
+        return http(`https://sjj1024.github.io/PackPlus/update.json`, {
             method: 'get',
         })
     },
     // get pakeplus info
-    getPakePlusInfo() {
-        return http(`/repos/Sjj1024/PakePlus/contents/package.json`, {
+    getPackPlusInfo() {
+        return http(`/repos/Sjj1024/PackPlus/contents/package.json`, {
             method: 'get',
         })
     },
     // get web config
     getWebConfig(fileName: string, branch: string) {
         return http(
-            `/repos/Sjj1024/PakePlus/contents/src-tauri/data/${fileName}`,
+            `/repos/Sjj1024/PackPlus/contents/src-tauri/data/${fileName}`,
             {
                 method: 'get',
                 params: {
@@ -233,7 +233,7 @@ export default {
     },
     // creat issue
     createIssue(body: any) {
-        return http(`/repos/Sjj1024/PakePlus/issues`, {
+        return http(`/repos/Sjj1024/PackPlus/issues`, {
             method: 'post',
             data: body,
         })

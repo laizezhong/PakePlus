@@ -21,6 +21,6 @@ Describe how the problem was resolved, including:
 - Logs showing the resolution  
 ```
 
-Submit issues here: [PakePlus Issues](https://github.com/Sjj1024/PakePlus/issues)  
+Submit issues here: [PackPlus Issues](https://github.com/Sjj1024/PackPlus/issues)  
 
 > ℹ️ *Tip: Clear, detailed reports help us resolve issues faster.*

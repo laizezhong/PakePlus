@@ -12,7 +12,7 @@ import { setTheme } from '@tauri-apps/api/app'
 
 // upstream repo info
 export const upstreamUser = import.meta.env.VITE_UPSTREAM_USER || ''
-export const ppRepo: string[] = ['PakePlus', 'PakePlus-Android', 'PakePlus-iOS']
+export const ppRepo: string[] = ['PackPlus', 'PackPlus-Android', 'PackPlus-iOS']
 
 export const mainBranch = import.meta.env.VITE_MAIN_BRANCH || ''
 export const webBranch = import.meta.env.VITE_WEB_BRANCH || ''
@@ -43,7 +43,7 @@ export const encryptPassword = import.meta.env.VITE_ENCRYPT_PASSWORD || ''
 // urlMap
 export const urlMap = {
     pakeplus: 'https://www.pakeplus.com',
-    github: 'https://github.com/Sjj1024/PakePlus',
+    github: 'https://github.com/Sjj1024/PackPlus',
     ppofficial: 'https://ppofficial.netlify.app',
     ppnotes: 'https://pakeplus.com/ppnotes.json',
     configdoc: 'https://ppofficial.pages.dev/guide/config.html',
@@ -52,7 +52,7 @@ export const urlMap = {
     questiondoc: 'https://pakeplus.com/question',
     exchange: 'https://www.pakeplus.com/exchange',
     pakeplusdev: 'https://pakeplus.pages.dev',
-    weixin: 'https://github.com/Sjj1024/PakePlus',
+    weixin: 'https://github.com/Sjj1024/PackPlus',
     qq: '',
     email: '1024xiaoshen@gmail.com',
     website: '',
@@ -71,9 +71,9 @@ export const urlMap = {
 
 // platform map
 export const platformMap = {
-    PakePlus: 'desktop',
-    'PakePlus-iOS': 'ios',
-    'PakePlus-Android': 'android',
+    PackPlus: 'desktop',
+    'PackPlus-iOS': 'ios',
+    'PackPlus-Android': 'android',
 }
 
 export const platforms: { [key: string]: PlatformInfo } = {
@@ -856,8 +856,8 @@ export const createBranch = async (
 //     // get build.yml file content
 //     // const content = await readStaticFile('build.yml')
 //     const content = await updateBuildFile({
-//         name: 'PakePlus',
-//         body: 'This is a workflow to help you automate the publishing of your PakePlus project to GitHub Packages.',
+//         name: 'PackPlus',
+//         body: 'This is a workflow to help you automate the publishing of your PackPlus project to GitHub Packages.',
 //     })
 //     console.log('content', content)
 //     if (content === 'error') {
@@ -867,7 +867,7 @@ export const createBranch = async (
 //     // update build.yml file content
 //     const updateRes: any = await githubApi.createBuildYml(
 //         store.userInfo.login,
-//         'PakePlus',
+//         'PackPlus',
 //         {
 //             message: 'update build.yml from pakeplus',
 //             content: content,

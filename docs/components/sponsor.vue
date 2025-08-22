@@ -2,7 +2,7 @@
     <h1>💖 Sponsor Us</h1>
 
     <p>
-        If you enjoy our PakePlus project, we welcome your sponsorship to help
+        If you enjoy our PackPlus project, we welcome your sponsorship to help
         us continue development and maintenance. Your support is our driving
         force. Please include a message or email us at: 1024xiaoshen@gmail.com
         when sponsoring so we can acknowledge your contribution. Thank you for

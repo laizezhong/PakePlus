@@ -5,30 +5,30 @@
                 <td>
                     DeepSeek
                     <a
-                        href="https://github.com/Sjj1024/PakePlus/releases/download/OtherFiles/DeepSeek_0.0.1_aarch64.dmg"
+                        href="https://github.com/Sjj1024/PackPlus/releases/download/OtherFiles/DeepSeek_0.0.1_aarch64.dmg"
                         >Mac</a
                     >
                     <a
-                        href="https://github.com/Sjj1024/PakePlus/releases/download/OtherFiles/DeepSeek_0.0.1_x64-setup.exe"
+                        href="https://github.com/Sjj1024/PackPlus/releases/download/OtherFiles/DeepSeek_0.0.1_x64-setup.exe"
                         >Windows</a
                     >
                     <a
-                        href="https://github.com/Sjj1024/PakePlus/releases/download/OtherFiles/DeepSeek_0.0.1_amd64.deb"
+                        href="https://github.com/Sjj1024/PackPlus/releases/download/OtherFiles/DeepSeek_0.0.1_amd64.deb"
                         >Linux</a
                     >
                 </td>
                 <td>
                     X (Twitter)
                     <a
-                        href="https://github.com/codegirle/PakePlus/releases/download/X/X_0.0.1_aarch64.dmg"
+                        href="https://github.com/codegirle/PackPlus/releases/download/X/X_0.0.1_aarch64.dmg"
                         >Mac</a
                     >
                     <a
-                        href="https://github.com/codegirle/PakePlus/releases/download/X/X_0.0.1_x64-setup.exe"
+                        href="https://github.com/codegirle/PackPlus/releases/download/X/X_0.0.1_x64-setup.exe"
                         >Windows</a
                     >
                     <a
-                        href="https://github.com/codegirle/PakePlus/releases/download/X/x_0.0.1_amd64.deb"
+                        href="https://github.com/codegirle/PackPlus/releases/download/X/x_0.0.1_amd64.deb"
                         >Linux</a
                     >
                 </td>
@@ -45,17 +45,17 @@
                 <td>
                     YouTube
                     <a
-                        href="https://github.com/codegirle/PakePlus/releases/download/YouTuBe/YouTube_0.0.1_aarch64.dmg"
+                        href="https://github.com/codegirle/PackPlus/releases/download/YouTuBe/YouTube_0.0.1_aarch64.dmg"
                     >
                         Mac
                     </a>
                     <a
-                        href="https://github.com/codegirle/PakePlus/releases/download/YouTuBe/YouTube_0.0.1_x64_en-US.msi"
+                        href="https://github.com/codegirle/PackPlus/releases/download/YouTuBe/YouTube_0.0.1_x64_en-US.msi"
                     >
                         Windows
                     </a>
                     <a
-                        href="https://github.com/codegirle/PakePlus/releases/download/YouTuBe/you-tube_0.0.1_amd64.deb"
+                        href="https://github.com/codegirle/PackPlus/releases/download/YouTuBe/you-tube_0.0.1_amd64.deb"
                     >
                         Linux
                     </a>
@@ -63,15 +63,15 @@
                 <td>
                     小红书
                     <a
-                        href="https://github.com/Sjj1024/PakePlus/releases/download/OtherFiles/_0.0.1_aarch64.dmg"
+                        href="https://github.com/Sjj1024/PackPlus/releases/download/OtherFiles/_0.0.1_aarch64.dmg"
                         >Mac</a
                     >
                     <a
-                        href="https://github.com/Sjj1024/PakePlus/releases/download/OtherFiles/_0.0.1_x64-setup.exe"
+                        href="https://github.com/Sjj1024/PackPlus/releases/download/OtherFiles/_0.0.1_x64-setup.exe"
                         >Windows</a
                     >
                     <a
-                        href="https://github.com/Sjj1024/PakePlus/releases/download/OtherFiles/_0.0.1_amd64.deb"
+                        href="https://github.com/Sjj1024/PackPlus/releases/download/OtherFiles/_0.0.1_amd64.deb"
                         >Linux</a
                     >
                 </td>
@@ -84,30 +84,30 @@
                 <td>
                     Tiktok
                     <a
-                        href="https://github.com/codegirle/PakePlus/releases/download/TikTok/TikTok_0.0.1_aarch64.dmg"
+                        href="https://github.com/codegirle/PackPlus/releases/download/TikTok/TikTok_0.0.1_aarch64.dmg"
                         >Mac</a
                     >
                     <a
-                        href="https://github.com/codegirle/PakePlus/releases/download/TikTok/TikTok_0.0.1_x64-setup.exe"
+                        href="https://github.com/codegirle/PackPlus/releases/download/TikTok/TikTok_0.0.1_x64-setup.exe"
                         >Windows</a
                     >
                     <a
-                        href="https://github.com/codegirle/PakePlus/releases/download/TikTok/tik-tok_0.0.1_amd64.deb"
+                        href="https://github.com/codegirle/PackPlus/releases/download/TikTok/tik-tok_0.0.1_amd64.deb"
                         >Linux</a
                     >
                 </td>
                 <td>
                     抖音
                     <a
-                        href="https://github.com/codegirle/PakePlus/releases/download/Douyin/_0.0.1_aarch64.dmg"
+                        href="https://github.com/codegirle/PackPlus/releases/download/Douyin/_0.0.1_aarch64.dmg"
                         >Mac</a
                     >
                     <a
-                        href="https://github.com/codegirle/PakePlus/releases/download/Douyin/_0.0.1_x64-setup.exe"
+                        href="https://github.com/codegirle/PackPlus/releases/download/Douyin/_0.0.1_x64-setup.exe"
                         >Windows</a
                     >
                     <a
-                        href="https://github.com/codegirle/PakePlus/releases/download/Douyin/_0.0.1_amd64.deb"
+                        href="https://github.com/codegirle/PackPlus/releases/download/Douyin/_0.0.1_amd64.deb"
                         >Linux</a
                     >
                 </td>

@@ -13,7 +13,7 @@
         <div class="content">
             <div class="title">
                 <img :src="pakePlusIcon" alt="pakeplus" class="logo" />
-                <span class="pakeplus">PakePlus</span>
+                <span class="pakeplus">PackPlus</span>
             </div>
             <div class="description">
                 <p>
@@ -28,7 +28,7 @@
                             <span class="iconfont group"> &#xe64b; </span>
                         </template>
                         <img
-                            src="https://gh-proxy.com/github.com/Sjj1024/PakePlus/blob/main/docs/static/imgs/wxcode.png"
+                            src="https://gh-proxy.com/github.com/Sjj1024/PackPlus/blob/main/docs/static/imgs/wxcode.png"
                             alt=""
                             class="groupCode"
                         />

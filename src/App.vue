@@ -45,7 +45,7 @@ const initEnv = async () => {
         return false
     }
     if (isMobile() && !isTauri) {
-        // to https://sjj1024.github.io/PakePlus/
+        // to https://sjj1024.github.io/PackPlus/
         window.location.href = 'https://ppofficial.pages.dev/'
         return
     }

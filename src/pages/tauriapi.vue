@@ -77,7 +77,7 @@
                             <el-icon>
                                 <span class="iconfont tauriIcon">&#xe6a4;</span>
                             </el-icon>
-                            <span>PakePlusApi</span>
+                            <span>PackPlusApi</span>
                         </template>
                         <el-menu-item index="3-1">{{
                             t('linkTo')
@@ -1040,7 +1040,7 @@
                 </div>
                 <!-- shell -->
                 <div v-else-if="menuIndex === '2-17'" class="cardContent">
-                    <h1 class="cardTitle">PakePlus shell</h1>
+                    <h1 class="cardTitle">PackPlus shell</h1>
                     <p>
                         Access the system shell. Allows you to spawn child
                         processes.
@@ -1600,7 +1600,7 @@ const listenEvent = async () => {
 
 // event:send event
 const sendEvent = async () => {
-    await emit('my-event', { message: 'Hello, PakePlus!' })
+    await emit('my-event', { message: 'Hello, PackPlus!' })
 }
 
 // event:unlisten event
@@ -2120,7 +2120,7 @@ const getPayJsCallback = async (payMathod: string = 'weixin') => {
         mchid: payJsMchid,
         out_trade_no: 'payjs_' + Date.now(),
         total_fee: money,
-        body: 'PakePlus测试订单',
+        body: 'PackPlus测试订单',
         type: payMathod === 'weixin' ? null : 'alipay',
     }
     // get pay sign
@@ -2380,7 +2380,7 @@ const openUrlWindow = async (type: string = 'current') => {
                 width: 800,
                 height: 400,
                 focus: true,
-                title: 'PakePlus Window',
+                title: 'PackPlus Window',
                 alwaysOnTop: true,
                 center: true,
                 resizable: true,

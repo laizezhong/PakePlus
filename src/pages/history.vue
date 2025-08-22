@@ -227,7 +227,7 @@ const deleteRelAssets = async () => {
     if (store.currentRelease.id !== 0) {
         const releaseRes: any = await githubApi.deleteRelease(
             store.userInfo.login,
-            'PakePlus',
+            'PackPlus',
             store.currentRelease.id
         )
         console.log('deleteRelease', releaseRes)

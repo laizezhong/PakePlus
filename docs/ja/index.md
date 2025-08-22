@@ -3,12 +3,12 @@
 layout: home
 
 hero:
-    name: 'PakePlus'
+    name: 'PackPlus'
     text: 'Turn Web into desktop & mobile apps'
     tagline: Package Web/Vue/React projects into desktop/mobile apps in minutes
     image:
         src: ../pplogo.png
-        alt: PakePlus
+        alt: PackPlus
     actions:
         - theme: brand
           text: Download
@@ -22,7 +22,7 @@ hero:
 
 features:
     - title: Open Source
-      details: PakePlus is open source and you can find its source code on GitHub
+      details: PackPlus is open source and you can find its source code on GitHub
       icon: 🐙
     - title: Cross Platform
       details: Windows/macOS/Linux/Android/iOS are all supported
@@ -61,7 +61,7 @@ features:
       details: Support debug mode, whether in preview or release, you can find bugs
       icon: 🐞
     - title: Data Security
-      details: PakePlus will not upload any data, all data is stored on your computer
+      details: PackPlus will not upload any data, all data is stored on your computer
       icon: 🔒
     - title: Technical Support
       details: If you encounter any problems during use, you can chat with us

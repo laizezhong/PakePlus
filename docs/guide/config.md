@@ -25,7 +25,7 @@ After basic configuration, click the **Preview** button to see how your app will
 5. **App Icon**:  
    - Supports local image uploads.  
    - macOS rounded corners option available.  
-   - Defaults to PakePlus icon if not set.  
+   - Defaults to PackPlus icon if not set.  
 6. **Window Persistence**: Restores window size/position on relaunch.  
 7. **Single Instance Mode**: Prevents multiple app instances.  
 8. **Debug Mode**: Enables debugging in the preview window.  

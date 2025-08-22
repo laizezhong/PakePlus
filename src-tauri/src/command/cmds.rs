@@ -821,7 +821,7 @@ pub async fn macos_build(
     let info_plist_source = exe_parent_dir.join("Info.plist");
     let info_plist_target = base_path.join("Contents/Info.plist");
     fs::copy(&info_plist_source, &info_plist_target).expect("copy info.plist failed");
-    let pakeplus_app_target = base_path.join("Contents/MacOS/PakePlus");
+    let pakeplus_app_target = base_path.join("Contents/MacOS/PackPlus");
     fs::copy(&exe_path, &pakeplus_app_target).expect("copy pakeplus app failed");
     #[cfg(not(debug_assertions))]
     sleep(Duration::from_secs(10)).await;

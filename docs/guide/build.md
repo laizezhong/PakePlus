@@ -1,6 +1,6 @@
 # Compilation and Release
 
-This step instructs GitHub to compile your project into a cross-platform desktop application. Currently, PakePlus only supports desktop platforms (mobile support coming soon). You can choose between two release modes: 
+This step instructs GitHub to compile your project into a cross-platform desktop application. Currently, PackPlus only supports desktop platforms (mobile support coming soon). You can choose between two release modes: 
 
 1. **Release Mode (Debug Disabled)** - For production use
 2. **Debug Mode** - Enables error logging in console when the app launches

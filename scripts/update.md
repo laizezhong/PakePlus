@@ -5,9 +5,9 @@ ppupdate.json in docs public
 download github release latest.json file and then edit latest.json to ppupdate.json and upload to github release 
 
 ```bash
-https://github.com/Sjj1024/PakePlus/releases/download/PakePlus-v0.5.28
+https://github.com/Sjj1024/PackPlus/releases/download/PackPlus-v0.5.28
 
-https://gh-proxy.com/github.com/Sjj1024/PakePlus/releases/latest/download
+https://gh-proxy.com/github.com/Sjj1024/PackPlus/releases/latest/download
 ```
 
 add notes

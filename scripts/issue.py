@@ -5,7 +5,7 @@ import json
 
 
 def get_issue(keyword):
-    url = f"https://api.github.com/search/issues?q={keyword}+state:open+in:title+repo:Sjj1024/PakePlus"
+    url = f"https://api.github.com/search/issues?q={keyword}+state:open+in:title+repo:Sjj1024/PackPlus"
     headers = {
         'Authorization': f'Bearer {os.environ.get("TOKEN")}'
     }
@@ -20,7 +20,7 @@ def get_issue(keyword):
 
 
 def close_issue(num, state, labels):
-    url = f"https://api.github.com/repos/Sjj1024/PakePlus/issues/{num}"
+    url = f"https://api.github.com/repos/Sjj1024/PackPlus/issues/{num}"
     payload = json.dumps({
         "state": state,
         "labels": labels

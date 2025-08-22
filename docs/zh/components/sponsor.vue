@@ -1,7 +1,7 @@
 <template>
     <h1>💖 赞助我们</h1>
     <p>
-        如果您也喜欢我们的PakePlus项目，欢迎赞助我们，我们会继续开发和维护。
+        如果您也喜欢我们的PackPlus项目，欢迎赞助我们，我们会继续开发和维护。
         您的支持是我们前进的动力。 赞助时请务必填写留言或发邮箱：
         1024xiaoshen@gmail.com，以便我们收录到赞助名单中，感谢您的支持与鼓励！
     </p>
@@ -133,7 +133,7 @@ const copyToClipboard = (id: string) => {
 
 const imageError = (event) => {
     event.target.src =
-        'https://gh-proxy.com/github.com/Sjj1024/PakePlus/blob/main/docs/static/imgs/pay.webp'
+        'https://gh-proxy.com/github.com/Sjj1024/PackPlus/blob/main/docs/static/imgs/pay.webp'
 }
 </script>
 

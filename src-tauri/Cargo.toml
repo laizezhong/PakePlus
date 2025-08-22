@@ -1,5 +1,5 @@
 [package]
-name = "PakePlus"
+name = "PackPlus"
 version = "1.0.5"
 description = "Turn any webpage into a desktop app and mobile app with Rust."
 authors = ["1024xiaoshen"]

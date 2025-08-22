@@ -2,7 +2,7 @@
     <div class="homeBox" :class="{ isWeb: !isTauri }">
         <div class="homeHeader">
             <div>
-                <div class="headerTitle" @click="delPakePlus">
+                <div class="headerTitle" @click="delPackPlus">
                     <span>{{ t('projectTitle') }}</span>
                 </div>
                 <div class="toolTips">
@@ -406,11 +406,11 @@ const logout = async () => {
 }
 
 // del pakeplus!
-const delPakePlus = async () => {
+const delPackPlus = async () => {
     if (isDev) {
-        await githubApi.deleteProgect(store.userInfo.login, 'PakePlus')
-        await githubApi.deleteProgect(store.userInfo.login, 'PakePlus-iOS')
-        await githubApi.deleteProgect(store.userInfo.login, 'PakePlus-Android')
+        await githubApi.deleteProgect(store.userInfo.login, 'PackPlus')
+        await githubApi.deleteProgect(store.userInfo.login, 'PackPlus-iOS')
+        await githubApi.deleteProgect(store.userInfo.login, 'PackPlus-Android')
         localStorage.removeItem('projectList')
         localStorage.removeItem('releases')
         store.$reset()
@@ -428,7 +428,7 @@ const goProject = async (pro: Project) => {
     // check branch exist
     if (store.token) {
         githubApi
-            .getBranch(store.userInfo.login, 'PakePlus', branchName.value)
+            .getBranch(store.userInfo.login, 'PackPlus', branchName.value)
             .then((res: any) => {
                 if (res.status === 200) {
                     console.log('branch exist')
@@ -437,19 +437,19 @@ const goProject = async (pro: Project) => {
                     createBranch(
                         store.userInfo.login,
                         pro.name,
-                        'PakePlus',
+                        'PackPlus',
                         store.shaInfo.desktopWeb
                     )
                     createBranch(
                         store.userInfo.login,
                         pro.name,
-                        'PakePlus-iOS',
+                        'PackPlus-iOS',
                         store.shaInfo.iosWeb
                     )
                     createBranch(
                         store.userInfo.login,
                         pro.name,
-                        'PakePlus-Android',
+                        'PackPlus-Android',
                         store.shaInfo.androidWeb
                     )
                 }
@@ -484,12 +484,12 @@ const showBranchDialog = () => {
         // oneMessage.error(t('configToken'))
         console.log(t('configToken'))
     } else {
-        getMainSha('PakePlus')
-        getWebSha('PakePlus')
-        getMainSha('PakePlus-iOS')
-        getWebSha('PakePlus-iOS')
-        getMainSha('PakePlus-Android')
-        getWebSha('PakePlus-Android')
+        getMainSha('PackPlus')
+        getWebSha('PackPlus')
+        getMainSha('PackPlus-iOS')
+        getWebSha('PackPlus-iOS')
+        getMainSha('PackPlus-Android')
+        getWebSha('PackPlus-Android')
     }
     // need creat new branch, first input project name
     branchDialog.value = true
@@ -565,12 +565,12 @@ const commitShas = async (tips: boolean = true) => {
         await new Promise((resolve) => setTimeout(resolve, 2000))
         console.log('wait fork done......', testLoading.value)
         const res = await Promise.all([
-            getMainSha('PakePlus'),
-            getWebSha('PakePlus'),
-            getMainSha('PakePlus-iOS'),
-            getWebSha('PakePlus-iOS'),
-            getMainSha('PakePlus-Android'),
-            getWebSha('PakePlus-Android'),
+            getMainSha('PackPlus'),
+            getWebSha('PackPlus'),
+            getMainSha('PackPlus-iOS'),
+            getWebSha('PackPlus-iOS'),
+            getMainSha('PackPlus-Android'),
+            getWebSha('PackPlus-Android'),
         ])
             .then(async (res) => {
                 console.log('wait fork done res', res)
@@ -579,14 +579,14 @@ const commitShas = async (tips: boolean = true) => {
                     // delete build.yml
                     let deleteRes = true
                     if (store.noSjj1024) {
-                        const pp = await deleteBuildYml(mainBranch, 'PakePlus')
+                        const pp = await deleteBuildYml(mainBranch, 'PackPlus')
                         const ppa = await deleteBuildYml(
                             mainBranch,
-                            'PakePlus-Android'
+                            'PackPlus-Android'
                         )
                         const ppi = await deleteBuildYml(
                             mainBranch,
-                            'PakePlus-iOS'
+                            'PackPlus-iOS'
                         )
                         deleteRes = pp && ppa && ppi
                     }
@@ -633,9 +633,9 @@ const forkStartShas = async (tips: boolean = true) => {
     testLoading.value = true
     // fork action is async
     const forkRes: any = await Promise.all([
-        forkPakePlus('PakePlus'),
-        forkPakePlus('PakePlus-iOS'),
-        forkPakePlus('PakePlus-Android'),
+        forkPackPlus('PackPlus'),
+        forkPackPlus('PackPlus-iOS'),
+        forkPackPlus('PackPlus-Android'),
     ])
     if (forkRes.every((item: any) => item)) {
         console.log('forkRes', forkRes)
@@ -649,13 +649,13 @@ const forkStartShas = async (tips: boolean = true) => {
 }
 
 // fork pakeplus-android and pakeplus-ios
-const forkPakePlus = async (repo: string = 'PakePlus') => {
+const forkPackPlus = async (repo: string = 'PackPlus') => {
     const forkRes: any = await githubApi.forkProgect(repo, {
         name: repo,
         default_branch_only: false,
     })
     if (forkRes.status === 202) {
-        console.log('forkPakePlus', forkRes)
+        console.log('forkPackPlus', forkRes)
         return true
     } else if (forkRes.status === 403 || forkRes.status === 404) {
         // maybe account has locked
@@ -672,7 +672,7 @@ const forkPakePlus = async (repo: string = 'PakePlus') => {
 }
 
 // get commit sha
-const getMainSha = async (repo: string = 'PakePlus') => {
+const getMainSha = async (repo: string = 'PackPlus') => {
     // get commit sha by branch name
     const res: any = await githubApi.getCommitShaRef(
         store.userInfo.login,
@@ -680,11 +680,11 @@ const getMainSha = async (repo: string = 'PakePlus') => {
         mainBranch
     )
     if (res.status === 200 && res.data) {
-        if (repo === 'PakePlus') {
+        if (repo === 'PackPlus') {
             store.shaInfo.desktopMain = res.data.sha
-        } else if (repo === 'PakePlus-iOS') {
+        } else if (repo === 'PackPlus-iOS') {
             store.shaInfo.iosMain = res.data.sha
-        } else if (repo === 'PakePlus-Android') {
+        } else if (repo === 'PackPlus-Android') {
             store.shaInfo.androidMain = res.data.sha
         }
         localStorage.setItem('shaInfo', JSON.stringify(store.shaInfo))
@@ -695,7 +695,7 @@ const getMainSha = async (repo: string = 'PakePlus') => {
 }
 
 // get commit sha
-const getWebSha = async (repo: string = 'PakePlus') => {
+const getWebSha = async (repo: string = 'PackPlus') => {
     // get commit sha by branch name
     const res: any = await githubApi.getCommitShaRef(
         store.userInfo.login,
@@ -703,11 +703,11 @@ const getWebSha = async (repo: string = 'PakePlus') => {
         webBranch
     )
     if (res.status === 200 && res.data) {
-        if (repo === 'PakePlus') {
+        if (repo === 'PackPlus') {
             store.shaInfo.desktopWeb = res.data.sha
-        } else if (repo === 'PakePlus-iOS') {
+        } else if (repo === 'PackPlus-iOS') {
             store.shaInfo.iosWeb = res.data.sha
-        } else if (repo === 'PakePlus-Android') {
+        } else if (repo === 'PackPlus-Android') {
             store.shaInfo.androidWeb = res.data.sha
         }
         return true
@@ -751,7 +751,7 @@ const creatProject = async () => {
         if (store.token) {
             const res: any = await githubApi.getBranch(
                 store.userInfo.login,
-                'PakePlus',
+                'PackPlus',
                 branchName.value
             )
             // 404 and store.projectList not include branchName.value
@@ -789,19 +789,19 @@ const creatProject = async () => {
                     createBranch(
                         store.userInfo.login,
                         branchName.value,
-                        'PakePlus',
+                        'PackPlus',
                         store.shaInfo.desktopWeb
                     ),
                     createBranch(
                         store.userInfo.login,
                         branchName.value,
-                        'PakePlus-Android',
+                        'PackPlus-Android',
                         store.shaInfo.androidWeb
                     ),
                     createBranch(
                         store.userInfo.login,
                         branchName.value,
-                        'PakePlus-iOS',
+                        'PackPlus-iOS',
                         store.shaInfo.iosWeb
                     ),
                 ]).then((res) => {
@@ -853,13 +853,13 @@ const creatProject = async () => {
 // creat build yml
 const uploadBuildYml = async (
     _: string = mainBranch,
-    repo: string = 'PakePlus'
+    repo: string = 'PackPlus'
 ) => {
     // get build.yml file content
     const content = await getBuildYmlFetch({
         repo: repo,
-        name: 'PakePlus',
-        body: 'This is a workflow to help you automate the publishing of your PakePlus project to GitHub Packages.',
+        name: 'PackPlus',
+        body: 'This is a workflow to help you automate the publishing of your PackPlus project to GitHub Packages.',
     })
     // create build.yml file content
     await new Promise((resolve) => setTimeout(resolve, 1000))
@@ -881,7 +881,7 @@ const uploadBuildYml = async (
 // delete build yml file, must do, because main branch need action promise
 const deleteBuildYml = async (
     branchName: string = mainBranch,
-    repo: string = 'PakePlus'
+    repo: string = 'PackPlus'
 ) => {
     const shaRes: any = await githubApi.getFileSha(
         store.userInfo.login,
@@ -927,7 +927,7 @@ const sendUpdateEvent = async (type: string) => {
 onMounted(() => {
     if (isTauri) {
         const window = getCurrentWindow()
-        window.setTitle('PakePlus')
+        window.setTitle('PackPlus')
     } else {
         oneMessage.error(t('webNotStable'))
     }

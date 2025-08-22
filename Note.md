@@ -18,6 +18,6 @@
 
 ### Document(文档)
 -   https://ppofficial.netlify.app/guide/
--   https://sjj1024.github.io/PakePlus/guide/
+-   https://sjj1024.github.io/PackPlus/guide/
 -   https://www.pakeplus.com/guide/
 -   https://pakeplus.vercel.app/guide/

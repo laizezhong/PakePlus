@@ -5,30 +5,30 @@
                 <td>
                     DeepSeek
                     <a
-                        href="https://github.com/Sjj1024/PakePlus/releases/download/OtherFiles/DeepSeek_0.0.1_aarch64.dmg"
+                        href="https://github.com/Sjj1024/PackPlus/releases/download/OtherFiles/DeepSeek_0.0.1_aarch64.dmg"
                         >Mac</a
                     >
                     <a
-                        href="https://github.com/Sjj1024/PakePlus/releases/download/OtherFiles/DeepSeek_0.0.1_x64-setup.exe"
+                        href="https://github.com/Sjj1024/PackPlus/releases/download/OtherFiles/DeepSeek_0.0.1_x64-setup.exe"
                         >Windows</a
                     >
                     <a
-                        href="https://github.com/Sjj1024/PakePlus/releases/download/OtherFiles/DeepSeek_0.0.1_amd64.deb"
+                        href="https://github.com/Sjj1024/PackPlus/releases/download/OtherFiles/DeepSeek_0.0.1_amd64.deb"
                         >Linux</a
                     >
                 </td>
                 <td>
                     X (Twitter)
                     <a
-                        href="https://github.com/codegirle/PakePlus/releases/download/Twitter/Twitter_0.0.1_aarch64.dmg"
+                        href="https://github.com/codegirle/PackPlus/releases/download/Twitter/Twitter_0.0.1_aarch64.dmg"
                         >Mac</a
                     >
                     <a
-                        href="https://github.com/codegirle/PakePlus/releases/download/Twitter/Twitter_0.0.1_x64-setup.exe"
+                        href="https://github.com/codegirle/PackPlus/releases/download/Twitter/Twitter_0.0.1_x64-setup.exe"
                         >Windows</a
                     >
                     <a
-                        href="https://github.com/codegirle/PakePlus/releases/download/Twitter/twitter_0.0.1_amd64.deb"
+                        href="https://github.com/codegirle/PackPlus/releases/download/Twitter/twitter_0.0.1_amd64.deb"
                         >Linux</a
                     >
                 </td>
@@ -36,12 +36,12 @@
             <tr>
                 <td>
                     <img
-                    src=https://sjj1024.github.io/PakePlus/static/imgs/deepseek.png
+                    src=https://sjj1024.github.io/PackPlus/static/imgs/deepseek.png
                     width=600/>
                 </td>
                 <td>
                     <img
-                    src=https://sjj1024.github.io/PakePlus/static/imgs/xtwitter.png
+                    src=https://sjj1024.github.io/PackPlus/static/imgs/xtwitter.png
                     width=600/>
                 </td>
             </tr>
@@ -49,30 +49,30 @@
                 <td>
                     YouTube
                     <a
-                        href="https://github.com/codegirle/PakePlus/releases/download/YouTube/YouTube_0.0.2_aarch64.dmg"
+                        href="https://github.com/codegirle/PackPlus/releases/download/YouTube/YouTube_0.0.2_aarch64.dmg"
                         >Mac</a
                     >
                     <a
-                        href="https://github.com/codegirle/PakePlus/releases/download/YouTube/YouTube_0.0.2_x64-setup.exe"
+                        href="https://github.com/codegirle/PackPlus/releases/download/YouTube/YouTube_0.0.2_x64-setup.exe"
                         >Windows</a
                     >
                     <a
-                        href="https://github.com/codegirle/PakePlus/releases/download/YouTube/you-tube_0.0.2_amd64.deb"
+                        href="https://github.com/codegirle/PackPlus/releases/download/YouTube/you-tube_0.0.2_amd64.deb"
                         >Linux</a
                     >
                 </td>
                 <td>
                     小红书
                     <a
-                        href="https://github.com/Sjj1024/PakePlus/releases/download/OtherFiles/_0.0.1_aarch64.dmg"
+                        href="https://github.com/Sjj1024/PackPlus/releases/download/OtherFiles/_0.0.1_aarch64.dmg"
                         >Mac</a
                     >
                     <a
-                        href="https://github.com/Sjj1024/PakePlus/releases/download/OtherFiles/_0.0.1_x64-setup.exe"
+                        href="https://github.com/Sjj1024/PackPlus/releases/download/OtherFiles/_0.0.1_x64-setup.exe"
                         >Windows</a
                     >
                     <a
-                        href="https://github.com/Sjj1024/PakePlus/releases/download/OtherFiles/_0.0.1_amd64.deb"
+                        href="https://github.com/Sjj1024/PackPlus/releases/download/OtherFiles/_0.0.1_amd64.deb"
                         >Linux</a
                     >
                 </td>
@@ -80,12 +80,12 @@
             <tr>
                 <td>
                     <img
-                    src=https://sjj1024.github.io/PakePlus/static/imgs/youtube.png
+                    src=https://sjj1024.github.io/PackPlus/static/imgs/youtube.png
                     width=600/>
                 </td>
                 <td>
                     <img
-                    src=https://sjj1024.github.io/PakePlus/static/imgs/hongshu.png
+                    src=https://sjj1024.github.io/PackPlus/static/imgs/hongshu.png
                     width=600/>
                 </td>
             </tr>
@@ -93,30 +93,30 @@
                 <td>
                     Tiktok
                     <a
-                        href="https://github.com/codegirle/PakePlus/releases/download/Tiktok/Tiktok_0.0.2_aarch64.dmg"
+                        href="https://github.com/codegirle/PackPlus/releases/download/Tiktok/Tiktok_0.0.2_aarch64.dmg"
                         >Mac</a
                     >
                     <a
-                        href="https://github.com/codegirle/PakePlus/releases/download/Tiktok/Tiktok_0.0.2_x64-setup.exe"
+                        href="https://github.com/codegirle/PackPlus/releases/download/Tiktok/Tiktok_0.0.2_x64-setup.exe"
                         >Windows</a
                     >
                     <a
-                        href="https://github.com/codegirle/PakePlus/releases/download/Tiktok/tiktok_0.0.2_amd64.deb"
+                        href="https://github.com/codegirle/PackPlus/releases/download/Tiktok/tiktok_0.0.2_amd64.deb"
                         >Linux</a
                     >
                 </td>
                 <td>
                     句乐部
                     <a
-                        href="https://gh-proxy.com/github.com/cuixiaorui/PakePlus/releases/download/juleu/julebu_1.0.0_aarch64.dmg"
+                        href="https://gh-proxy.com/github.com/cuixiaorui/PackPlus/releases/download/juleu/julebu_1.0.0_aarch64.dmg"
                         >Mac</a
                     >
                     <a
-                        href="https://gh-proxy.com/github.com/cuixiaorui/PakePlus/releases/download/juleu/julebu_1.0.0_x64-setup.exe"
+                        href="https://gh-proxy.com/github.com/cuixiaorui/PackPlus/releases/download/juleu/julebu_1.0.0_x64-setup.exe"
                         >Windows</a
                     >
                     <a
-                        href="https://gh-proxy.com/github.com/cuixiaorui/PakePlus/releases/download/juleu/julebu_1.0.0_amd64.deb"
+                        href="https://gh-proxy.com/github.com/cuixiaorui/PackPlus/releases/download/juleu/julebu_1.0.0_amd64.deb"
                         >Linux</a
                     >
                 </td>
@@ -124,7 +124,7 @@
             <tr>
                 <td>
                     <img
-                    src=https://sjj1024.github.io/PakePlus/static/imgs/tiktok.png
+                    src=https://sjj1024.github.io/PackPlus/static/imgs/tiktok.png
                     width=600/>
                 </td>
                 <td>

@@ -41,7 +41,7 @@ pub async fn resolve_setup(app: &mut App) -> Result<(), Error> {
     let app_handle = app.handle();
     let window_json = r#"
         {
-            "title": "PakePlus",
+            "title": "PackPlus",
             "visible": false,
             "url": "index.html",
             "width": 1024,

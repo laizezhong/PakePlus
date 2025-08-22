@@ -65,7 +65,7 @@
                             spellCheck="false"
                             clearable
                             @input="changeAppName"
-                            :placeholder="`${t('example')}：PakePlus`"
+                            :placeholder="`${t('example')}：PackPlus`"
                         />
                     </el-form-item>
                     <el-form-item
@@ -667,11 +667,11 @@
                     <el-checkbox-group v-model="pubForm.platform">
                         <el-checkbox
                             :label="t('androidapp')"
-                            value="PakePlus-Android"
+                            value="PackPlus-Android"
                         />
                         <el-checkbox
                             :label="t('iosapp')"
-                            value="PakePlus-iOS"
+                            value="PackPlus-iOS"
                         />
                         <el-checkbox
                             :label="t('pwaapp')"
@@ -785,15 +785,15 @@
         </ImgPreview>
         <Building
             v-model:visible="buildLoading"
-            :desktopTime="buildTimeText.PakePlus"
-            :desktopStatus="buildStatus['PakePlus']"
-            :desktopRate="buildRates['PakePlus']"
-            :androidTime="buildTimeText['PakePlus-Android']"
-            :androidStatus="buildStatus['PakePlus-Android']"
-            :androidRate="buildRates['PakePlus-Android']"
-            :iosTime="buildTimeText['PakePlus-iOS']"
-            :iosStatus="buildStatus['PakePlus-iOS']"
-            :iosRate="buildRates['PakePlus-iOS']"
+            :desktopTime="buildTimeText.PackPlus"
+            :desktopStatus="buildStatus['PackPlus']"
+            :desktopRate="buildRates['PackPlus']"
+            :androidTime="buildTimeText['PackPlus-Android']"
+            :androidStatus="buildStatus['PackPlus-Android']"
+            :androidRate="buildRates['PackPlus-Android']"
+            :iosTime="buildTimeText['PackPlus-iOS']"
+            :iosStatus="buildStatus['PackPlus-iOS']"
+            :iosRate="buildRates['PackPlus-iOS']"
             :pwaTime="buildTimeText['PWA']"
             :pwaStatus="buildStatus['PWA']"
             :pwaRate="buildRates['PWA']"
@@ -883,7 +883,7 @@ const warning = ref('')
 
 // do not use same name with ref
 const pubForm = reactive({
-    platform: ['PakePlus-Android'],
+    platform: ['PackPlus-Android'],
     chip: 'macos',
     model: 'close',
     desc: '',
@@ -892,46 +892,46 @@ const pubForm = reactive({
 const buildLoading = ref(false)
 // check dispatch workflow timer
 let buildTime = reactive<any>({
-    PakePlus: 0,
-    'PakePlus-Android': 0,
-    'PakePlus-iOS': 0,
+    PackPlus: 0,
+    'PackPlus-Android': 0,
+    'PackPlus-iOS': 0,
     PWA: 0,
 })
 
 let buildTimeText = reactive<any>({
-    PakePlus: '',
-    'PakePlus-Android': '',
-    'PakePlus-iOS': '',
+    PackPlus: '',
+    'PackPlus-Android': '',
+    'PackPlus-iOS': '',
     PWA: '',
 })
 
 let buildStatus = reactive<any>({
-    PakePlus: '',
-    'PakePlus-Android': '',
-    'PakePlus-iOS': '',
+    PackPlus: '',
+    'PackPlus-Android': '',
+    'PackPlus-iOS': '',
     PWA: '',
 })
 
 let buildRates = reactive<any>({
-    PakePlus: 0,
-    'PakePlus-Android': 0,
-    'PakePlus-iOS': 0,
+    PackPlus: 0,
+    'PackPlus-Android': 0,
+    'PackPlus-iOS': 0,
     PWA: 0,
 })
 
 // 编译时间计时器
 let buildTimer = reactive<any>({
-    PakePlus: null,
-    'PakePlus-Android': null,
-    'PakePlus-iOS': null,
+    PackPlus: null,
+    'PackPlus-Android': null,
+    'PackPlus-iOS': null,
     PWA: null,
 })
 
 // 检查dispatch workflow timer
 let checkDispatchTimer = reactive<any>({
-    PakePlus: null,
-    'PakePlus-Android': null,
-    'PakePlus-iOS': null,
+    PackPlus: null,
+    'PackPlus-Android': null,
+    'PackPlus-iOS': null,
     PWA: null,
 })
 
@@ -1302,7 +1302,7 @@ const handleFileChange = async (event: any) => {
 const upSrcFile = async (filePath: string, base64Content: string) => {
     const resSha = await githubApi.getFileSha(
         store.userInfo.login,
-        'PakePlus',
+        'PackPlus',
         filePath,
         { ref: store.currentProject.name }
     )
@@ -1321,7 +1321,7 @@ const upSrcFile = async (filePath: string, base64Content: string) => {
     // 更新文件
     const updateRes: any = await githubApi.updateFileContent(
         store.userInfo.login,
-        'PakePlus',
+        'PackPlus',
         filePath,
         params
     )
@@ -1731,10 +1731,10 @@ const publishPhone = async () => {
             // update app icon
             await updateIcon(repo)
             // update custom.js
-            if (repo === 'PakePlus-Android') {
+            if (repo === 'PackPlus-Android') {
                 await updateCustomJs(repo, 'app/src/main/assets/custom.js')
             } else {
-                await updateCustomJs(repo, 'PakePlus/custom.js')
+                await updateCustomJs(repo, 'PackPlus/custom.js')
             }
             // update ppconfig.json
             await updatePPconfig(repo)
@@ -1749,7 +1749,7 @@ const publishPhone = async () => {
                 store.currentProject.name,
                 store.currentProject.showName,
                 store.currentProject.isHtml,
-                'PakePlus publish action error ' + error.message,
+                'PackPlus publish action error ' + error.message,
                 'failure',
                 'build error',
                 repo
@@ -1790,10 +1790,10 @@ const dispatchAction = async (repo: string) => {
             store.currentProject.name,
             store.currentProject.showName,
             store.currentProject.isHtml,
-            'PakePlus dispatch error ' + message,
+            'PackPlus dispatch error ' + message,
             'failure',
             'build error',
-            'PakePlus'
+            'PackPlus'
         )
         throw new Error(t('dispatchError') + ': ' + message)
     } else {
@@ -1819,9 +1819,9 @@ const dispatchAction = async (repo: string) => {
 
 // rerun fails jobs
 let rerunCounts: any = {
-    PakePlus: 0,
-    'PakePlus-Android': 0,
-    'PakePlus-iOS': 0,
+    PackPlus: 0,
+    'PackPlus-Android': 0,
+    'PackPlus-iOS': 0,
     PWA: 0,
 }
 const reRunFailsJobs = async (repo: string, id: number, html_url: string) => {
@@ -1928,7 +1928,7 @@ const checkBuildStatus = async (repo: string) => {
                 html_url,
                 'unknown',
                 'build unknown ' + status,
-                'PakePlus'
+                'PackPlus'
             )
             buildLoading.value = false
             buildTime = 0
@@ -1989,9 +1989,9 @@ onUnmounted(() => {
 onMounted(async () => {
     window.addEventListener('keydown', handleKeydown)
     // 重制编译时间
-    buildTime.PakePlus = 0
-    buildTime['PakePlus-Android'] = 0
-    buildTime['PakePlus-iOS'] = 0
+    buildTime.PackPlus = 0
+    buildTime['PackPlus-Android'] = 0
+    buildTime['PackPlus-iOS'] = 0
     buildTime['PWA'] = 0
     if (store.currentProject.icon) {
         confirmIcon(store.currentProject.icon)

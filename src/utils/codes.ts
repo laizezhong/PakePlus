@@ -57,7 +57,7 @@ const webview = new WebviewWindow('my-label', {
     width: 800,
     height: 400,
     focus: true,
-    title: 'PakePlus Window',
+    title: 'PackPlus Window',
     alwaysOnTop: true,
     center: true,
     resizable: true,

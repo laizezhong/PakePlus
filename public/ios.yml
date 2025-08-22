@@ -45,12 +45,12 @@ jobs:
                   echo "Installing appicon tool..."
                   brew install Nonchalant/appicon/appicon
                   echo "Generating AppIcon..."
-                  appicon pakeplus.png --output-path ./PakePlus/Assets.xcassets/AppIcon.appiconset
+                  appicon pakeplus.png --output-path ./PackPlus/Assets.xcassets/AppIcon.appiconset
 
             - name: Update App Name
               run: |
                   echo "Updating App Name..."
-                  plutil -replace CFBundleDisplayName -string "派克Plus" ./PakePlus/Info.plist
+                  plutil -replace CFBundleDisplayName -string "派克Plus" ./PackPlus/Info.plist
 
             - name: Build IPA Package
               run: |

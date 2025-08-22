@@ -1,15 +1,15 @@
 # Advanced Usage
 
-For developers who need to debug frontend projects or handle large `dist` directories (which may exceed GitHub API size/quantity limits in PakePlus), here's an advanced workflow to sync your `dist` directory to GitHub for compilation:
+For developers who need to debug frontend projects or handle large `dist` directories (which may exceed GitHub API size/quantity limits in PackPlus), here's an advanced workflow to sync your `dist` directory to GitHub for compilation:
 
-1. **Create a Project in PakePlus**  
+1. **Create a Project in PackPlus**  
    Example: Name your project `deepseek`.
 
-2. **Clone Your PakePlus Repository**  
-   After token verification, PakePlus automatically forks these repositories to your GitHub account:
-   - `PakePlus` (desktop)
-   - `PakePlus-Android` (mobile)
-   - `PakePlus-iOS` (mobile)  
+2. **Clone Your PackPlus Repository**  
+   After token verification, PackPlus automatically forks these repositories to your GitHub account:
+   - `PackPlus` (desktop)
+   - `PackPlus-Android` (mobile)
+   - `PackPlus-iOS` (mobile)  
    Clone the relevant repository based on your target platform.
 
 3. **Sync Your `dist` Directory**  
@@ -49,7 +49,7 @@ For developers who need to debug frontend projects or handle large `dist` direct
      - Click "Run workflow" and wait for completion (~10 mins).
 
 5. **Download Your App**  
-   Once compiled, the release will appear in PakePlus’s **Releases** section.  
+   Once compiled, the release will appear in PackPlus’s **Releases** section.  
    - Desktop: `.dmg` (macOS) / `.exe` (Windows)  
    - Mobile: `.apk` (Android) / `.ipa` (iOS)  
 

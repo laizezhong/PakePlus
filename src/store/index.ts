@@ -265,15 +265,15 @@ export const usePPStore = defineStore('pakeplus', {
         },
         delProject(projectName: string) {
             // delete branch
-            githubApi.deleteBranch(this.userInfo.login, 'PakePlus', projectName)
+            githubApi.deleteBranch(this.userInfo.login, 'PackPlus', projectName)
             githubApi.deleteBranch(
                 this.userInfo.login,
-                'PakePlus-Android',
+                'PackPlus-Android',
                 projectName
             )
             githubApi.deleteBranch(
                 this.userInfo.login,
-                'PakePlus-IOS',
+                'PackPlus-IOS',
                 projectName
             )
             // delete release
@@ -322,14 +322,14 @@ export const usePPStore = defineStore('pakeplus', {
                 this.releases[this.currentProject.name].id !== 0
             ) {
                 this.currentRelease = this.releases[this.currentProject.name]
-                await this.getRelease('PakePlus')
-                await this.getRelease('PakePlus-iOS')
-                await this.getRelease('PakePlus-Android')
+                await this.getRelease('PackPlus')
+                await this.getRelease('PackPlus-iOS')
+                await this.getRelease('PackPlus-Android')
             } else {
                 this.currentRelease = { id: 0 }
-                await this.getRelease('PakePlus')
-                await this.getRelease('PakePlus-iOS')
-                await this.getRelease('PakePlus-Android')
+                await this.getRelease('PackPlus')
+                await this.getRelease('PackPlus-iOS')
+                await this.getRelease('PackPlus-Android')
             }
         },
         // update tauri config
@@ -341,7 +341,7 @@ export const usePPStore = defineStore('pakeplus', {
                 JSON.stringify(this.currentProject)
             )
         },
-        async getRelease(repo: string = 'PakePlus') {
+        async getRelease(repo: string = 'PackPlus') {
             // if token is null, return
             if (localStorage.getItem('token')) {
                 const releaseRes: any = await githubApi.getReleasesAssets(
@@ -382,7 +382,7 @@ export const usePPStore = defineStore('pakeplus', {
             }
         },
         // delete release
-        async deleteRelease(repo: string = 'PakePlus') {
+        async deleteRelease(repo: string = 'PackPlus') {
             if (this.isRelease) {
                 const releaseRes: any = await githubApi.deleteRelease(
                     this.userInfo.login,
@@ -395,7 +395,7 @@ export const usePPStore = defineStore('pakeplus', {
             this.setRelease(this.currentProject.name, { id: 0 })
         },
         // update icon
-        async updateIcon(repo: string = 'PakePlus', iconBase64: string) {
+        async updateIcon(repo: string = 'PackPlus', iconBase64: string) {
             if (iconBase64 === '') {
                 return true
             }
@@ -431,7 +431,7 @@ export const usePPStore = defineStore('pakeplus', {
             }
         },
         // update files
-        async updatePPconfig(repo: string = 'PakePlus') {
+        async updatePPconfig(repo: string = 'PackPlus') {
             // get ppconfig.json sha
             const shaRes: any = await githubApi.getFileSha(
                 this.userInfo.login,
@@ -448,7 +448,7 @@ export const usePPStore = defineStore('pakeplus', {
                 // update build.yml file content
                 const updateRes: any = await githubApi.updateBuildYmlFile(
                     this.userInfo.login,
-                    'PakePlus',
+                    'PackPlus',
                     {
                         message: 'update build.yml from pakeplus',
                         content: content,
@@ -468,10 +468,10 @@ export const usePPStore = defineStore('pakeplus', {
         // android build step
         async *androidBuildStep() {
             // 1. delete release
-            await this.deleteRelease('PakePlus-Android')
+            await this.deleteRelease('PackPlus-Android')
             yield 'delete release'
             // 2. update icon
-            await this.updateIcon('PakePlus-Android', this.currentProject.icon)
+            await this.updateIcon('PackPlus-Android', this.currentProject.icon)
             yield 'update icon'
             // 3. update custom.js
             yield 'update custom.js'
